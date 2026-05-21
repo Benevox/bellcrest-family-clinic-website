@@ -76,28 +76,6 @@ function ServicesPage() {
         </div>
       </section>
 
-      {/* Phone hours */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-4xl px-6">
-          <h2 className="mb-3 font-serif text-3xl font-bold text-brand-navy">Phones are only answered</h2>
-          <p className="mb-8 text-brand-slate">During these hours a member of our team is available to take your call.</p>
-          <div className="overflow-hidden rounded-2xl border border-border">
-            {phoneHours.map((row, i) => (
-              <div
-                key={row.day}
-                className={`flex flex-col gap-1 px-6 py-5 md:flex-row md:items-center md:justify-between ${i % 2 === 0 ? "bg-brand-surface" : "bg-white"}`}
-              >
-                <span className="text-sm font-semibold text-brand-navy">{row.day}</span>
-                <span className="text-sm text-brand-slate">{row.time}</span>
-              </div>
-            ))}
-          </div>
-          <p className="mt-6 text-xs text-brand-slate">
-            Note: The office is closed on weekends (unless running the After Hours Clinic) and all statutory holidays.
-          </p>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="bg-brand-navy py-24 text-white">
         <div className="mx-auto max-w-3xl px-6 text-center">
