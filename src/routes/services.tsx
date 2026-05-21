@@ -26,11 +26,6 @@ const allServices = [
   { icon: HeartPulse, title: "Mental Health Support", body: "Initial assessment, ongoing follow-up and coordinated referrals when needed." },
 ];
 
-const phoneHours = [
-  { day: "Monday – Thursday mornings", time: "9:30am – 11:30am" },
-  { day: "Friday mornings", time: "10:00am – 12:00pm" },
-  { day: "Monday – Wednesday afternoons", time: "1:30pm – 4:30pm" },
-];
 
 function ServicesPage() {
   return (
