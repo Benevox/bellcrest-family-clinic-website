@@ -18,7 +18,7 @@ export const Route = createFileRoute("/after-hours")({
 });
 
 const locations = [
-  { name: "Bellcrest Family Clinic", doctor: "Dr. Sam Onuekwa", address: "Unit 407 – 672 Brant Street", phone: "289-245-1071" },
+  { name: "Bellcrest Family Clinic", doctor: "Dr. Samuel Onuekwa", address: "Unit 407 – 672 Brant Street", phone: "289-245-1071" },
   { name: "Harvester Road Medical Clinic", doctor: "Dr. Chemparathy, Dr. Sabera Ahmed, Dr. Sadaf Ahmed", address: "Suite 409 – 3155 Harvester Road", phone: "905-632-3000" },
   { name: "Harvester Road Medical Clinic", doctor: "Dr. Nayar", address: "Suite 201 – 3155 Harvester Road", phone: "905-632-4640" },
   { name: "Harvester Road Medical Clinic", doctor: "Dr. Kozac", address: "Suite 410 – 3155 Harvester Road", phone: "905-333-0259" },
@@ -108,6 +108,24 @@ function AfterHoursPage() {
                 For information on clinic location and contact number each day, call <span className="font-semibold text-brand-navy">905-635-2344</span>.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dr. Onuekwa bio */}
+      <section className="py-12">
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="rounded-2xl border border-border bg-white p-8">
+            <h2 className="mb-4 font-serif text-2xl font-bold text-brand-navy">About Dr. Samuel Onuekwa</h2>
+            <p className="mb-4 text-brand-slate leading-relaxed">
+              Dr. Samuel Onuekwa is an experienced family physician with over a decade of medical practice experience, including several years working in the United Kingdom before relocating to Canada. His background spans both public and private healthcare settings, where he gained extensive experience managing a wide range of acute and chronic medical conditions while providing comprehensive, patient-focused care.
+            </p>
+            <p className="mb-4 text-brand-slate leading-relaxed">
+              He obtained his medical degree from the University of Port Harcourt and later earned a Master of Public Health with Distinction from the University of Wolverhampton. He completed his postgraduate residency training in the United Kingdom and was awarded Membership of the Royal College of General Practitioners (MRCGP).
+            </p>
+            <p className="text-brand-slate leading-relaxed">
+              Dr. Onuekwa has also served in a variety of leadership roles throughout his career and has contributed to published research focused on improving healthcare delivery and patient outcomes. He is committed to providing compassionate, evidence-based, and patient-centred care, and is known for his approachable manner, attention to detail, and dedication to supporting patients in achieving their best possible health.
+            </p>
           </div>
         </div>
       </section>
