@@ -75,7 +75,7 @@ function Home() {
       <section className="border-y border-border bg-white">
         <div className="mx-auto grid max-w-7xl grid-cols-1 divide-y divide-border md:grid-cols-3 md:divide-x md:divide-y-0">
           <InfoItem icon={Phone} label="Reception" value="289-245-1071" />
-          <InfoItem icon={Clock} label="Office Hours" value="Mon–Thu 9am–4:30pm" />
+          <InfoItem icon={Clock} label="Office Hours" value="Mon–Wed & Fri 9am–5pm | Thu 9am–1pm" />
           <InfoItem icon={MapPin} label="Location" value="672 Brant St, Burlington" />
         </div>
       </section>
