@@ -18,7 +18,7 @@ export const Route = createFileRoute("/after-hours")({
 });
 
 const locations = [
-  { name: "Bellcrest Family Clinic", doctor: "Dr. Sam Onuekwa", address: "Unit 407 – 672 Brant Street", phone: "289-245-1071" },
+  { name: "Bellcrest Family Clinic", doctor: "Dr. Samuel Onuekwa", address: "Unit 407 – 672 Brant Street", phone: "289-245-1071" },
   { name: "Harvester Road Medical Clinic", doctor: "Dr. Chemparathy, Dr. Sabera Ahmed, Dr. Sadaf Ahmed", address: "Suite 409 – 3155 Harvester Road", phone: "905-632-3000" },
   { name: "Harvester Road Medical Clinic", doctor: "Dr. Nayar", address: "Suite 201 – 3155 Harvester Road", phone: "905-632-4640" },
   { name: "Harvester Road Medical Clinic", doctor: "Dr. Kozac", address: "Suite 410 – 3155 Harvester Road", phone: "905-333-0259" },
