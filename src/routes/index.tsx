@@ -67,14 +67,6 @@ function Home() {
               height={960}
               className="aspect-[4/3] w-full rounded-2xl object-cover shadow-2xl outline outline-1 -outline-offset-1 outline-black/5"
             />
-            <div className="absolute -bottom-6 -left-6 hidden max-w-[260px] rounded-xl border border-border bg-white p-6 shadow-xl sm:block">
-              <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-brand-slate">Phone Hours</p>
-              <div className="space-y-1.5 text-sm font-medium">
-                <p className="flex justify-between"><span className="text-brand-slate">Mon–Thu</span> <span className="text-brand-navy">9:30a – 11:30a</span></p>
-                <p className="flex justify-between"><span className="text-brand-slate">Fri</span> <span className="text-brand-navy">10:00a – 12:00p</span></p>
-                <p className="flex justify-between"><span className="text-brand-slate">Afternoons</span> <span className="text-brand-navy">1:30p – 4:30p</span></p>
-              </div>
-            </div>
           </div>
         </div>
       </header>
