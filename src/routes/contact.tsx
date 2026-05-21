@@ -48,7 +48,7 @@ function ContactPage() {
             <ContactRow
               icon={Clock}
               label="Hours"
-              value={<>Mon–Thu: 9am–12pm<br />Mon, Tue, Thu: 1:30pm–4:30pm</>}
+              value={<>Mon–Wed & Fri: 9am–5pm<br />Thu: 9am–1pm<br />Sat: Subject to availability<br />Sun: Closed</>}
             />
           </div>
           <div className="overflow-hidden rounded-2xl border border-border shadow-sm">
