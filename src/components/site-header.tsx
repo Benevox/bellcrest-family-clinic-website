@@ -5,6 +5,7 @@ import logo from "@/assets/bellcrest-logo.avif";
 
 const navItems = [
   { to: "/services", label: "Services" },
+  { to: "/team", label: "Meet the Team" },
   { to: "/after-hours", label: "After Hours" },
   { to: "/contact", label: "Contact" },
 ] as const;
