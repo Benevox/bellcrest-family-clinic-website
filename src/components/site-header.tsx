@@ -5,7 +5,7 @@ import logo from "@/assets/bellcrest-logo.avif";
 
 const navItems = [
   { to: "/services", label: "Services" },
-  { to: "/team", label: "Meet the Team" },
+  { to: "/team", label: "Meet the Doctors" },
   { to: "/after-hours", label: "After Hours" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -40,7 +40,7 @@ export function SiteHeader() {
             ))}
             <a
               href="#book"
-              className="rounded-full bg-brand-blue px-6 py-2.5 text-xs font-bold tracking-wider text-white uppercase transition-all hover:bg-brand-navy"
+              className="rounded-full bg-brand-gold px-6 py-2.5 text-xs font-bold tracking-wider text-brand-navy uppercase transition-all hover:brightness-95"
             >
               Book Online
             </a>
@@ -69,7 +69,7 @@ export function SiteHeader() {
             <a
               href="#book"
               onClick={() => setOpen(false)}
-              className="rounded-full bg-brand-blue px-6 py-2.5 text-center text-xs font-bold tracking-wider text-white uppercase"
+              className="rounded-full bg-brand-gold px-6 py-2.5 text-center text-xs font-bold tracking-wider text-brand-navy uppercase"
             >
               Book Online
             </a>

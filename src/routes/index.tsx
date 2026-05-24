@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { BookingPopup } from "@/components/booking-popup";
 import { ShieldCheck, Users, Activity, Syringe, ArrowRight, Phone, Clock, MapPin } from "lucide-react";
 import heroImg from "@/assets/hero-clinic.jpg";
 import afterHoursImg from "@/assets/after-hours.jpg";
@@ -29,7 +30,9 @@ const services = [
 function Home() {
   return (
     <div className="min-h-screen bg-brand-surface text-brand-navy">
+      <BookingPopup />
       <SiteHeader />
+
 
       {/* Hero */}
       <header className="relative overflow-hidden bg-white py-20 md:py-28">
