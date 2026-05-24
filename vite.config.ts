@@ -5,9 +5,13 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 
-// Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-// If building on Render, bypass the Cloudflare plugin to output a standard Node server.
+// If building on Render, force Nitro to use the Node.js server preset.
+// wrangler.jsonc in the project root causes TanStack Start to auto-detect
+// Cloudflare, so we override it here before Nitro reads the environment.
 const isRender = process.env.RENDER === "true";
+if (isRender) {
+  process.env.NITRO_PRESET = "node-server";
+}
 
 export default isRender
   ? defineViteConfig({
