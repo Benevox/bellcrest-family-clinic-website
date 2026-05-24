@@ -39,7 +39,7 @@ function TeamPage() {
           <div className="rounded-2xl border border-border bg-white p-8 md:p-12">
             <p className="mb-1 text-xs uppercase tracking-widest text-brand-gold">Family Physician</p>
             <h2 className="mb-1 font-serif text-3xl font-bold text-brand-navy">Dr. Samuel Onuekwa</h2>
-            <p className="mb-6 text-sm uppercase tracking-widest text-brand-slate">MBBS, MPH, MRCGP</p>
+            <p className="mb-6 text-sm uppercase tracking-widest text-brand-slate">MBBS, MPH, MRCGP, CCFP</p>
             <p className="mb-4 text-brand-slate leading-relaxed">
               Dr. Samuel Onuekwa is an experienced family physician with over a decade of medical practice experience, including several years working in the United Kingdom before relocating to Canada. His background spans both public and private healthcare settings, where he gained extensive experience managing a wide range of acute and chronic medical conditions while providing comprehensive, patient-focused care.
             </p>

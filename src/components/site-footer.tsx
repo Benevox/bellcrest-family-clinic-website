@@ -28,8 +28,10 @@ export function SiteFooter() {
               contact@bellcrestfamilyclinic.ca
             </a>
             <p className="text-xs text-brand-slate leading-relaxed">
-              Mon–Thu 9am–12pm<br />
-              Mon, Tue, Thu 1:30pm–4:30pm
+              Mon–Wed & Fri: 9am–5pm<br />
+              Thu: 9am–1pm<br />
+              Sat: Subject to availability<br />
+              Sun: Closed
             </p>
           </div>
           <div>
