@@ -14,7 +14,9 @@ export default isRender
       plugins: [
         tsconfigPaths(),
         tailwindcss(),
-        tanstackStart(),
+        tanstackStart({
+          server: { preset: "node-server" },
+        }),
         react(),
       ],
     })
