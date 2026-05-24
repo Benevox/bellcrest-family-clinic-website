@@ -124,7 +124,7 @@ function ContactPage() {
               </p>
               <button
                 type="submit"
-                className="w-full rounded-full bg-brand-navy px-8 py-4 text-sm font-bold uppercase tracking-wider text-white transition-all hover:bg-brand-blue"
+                className="w-full rounded-full bg-brand-gold px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-navy transition-all hover:brightness-95"
               >
                 Send Request
               </button>
