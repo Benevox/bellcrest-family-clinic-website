@@ -1,7 +1,7 @@
 import { defineConfig as defineLovableConfig } from "@lovable.dev/vite-tanstack-config";
 import { defineConfig as defineViteConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { tanstackStart } from "@tanstack/react-start/vite";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 
