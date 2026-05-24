@@ -50,7 +50,7 @@ function Home() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#book"
-                className="rounded-lg bg-brand-navy px-8 py-4 text-sm font-bold text-white transition-all hover:bg-brand-blue"
+                className="rounded-lg bg-brand-gold px-8 py-4 text-sm font-bold text-brand-navy transition-all hover:brightness-95"
               >
                 Schedule an Appointment
               </a>

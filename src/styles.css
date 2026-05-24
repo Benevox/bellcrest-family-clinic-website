@@ -63,7 +63,7 @@
   --popover-foreground: var(--brand-navy);
   --primary: var(--brand-navy);
   --primary-foreground: oklch(0.984 0.003 247);
-  --secondary: oklch(0.968 0.007 247);
+  --secondary: var(--brand-gold);
   --secondary-foreground: var(--brand-navy);
   --muted: oklch(0.968 0.007 247);
   --muted-foreground: var(--brand-slate);
