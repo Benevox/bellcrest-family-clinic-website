@@ -162,7 +162,7 @@ function Home() {
           </p>
           <a
             href="#"
-            className="inline-flex items-center gap-2 rounded-full bg-brand-blue px-8 py-4 text-sm font-bold uppercase tracking-wider text-white transition-all hover:bg-brand-navy"
+            className="inline-flex items-center gap-2 rounded-full bg-brand-gold px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-navy transition-all hover:brightness-95"
           >
             Book Now <ArrowRight size={16} />
           </a>
