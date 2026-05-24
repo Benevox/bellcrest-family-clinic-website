@@ -14,10 +14,10 @@ export default isRender
       plugins: [
         tsconfigPaths(),
         tailwindcss(),
-        react(),
         tanstackStart({
           server: { entry: "src/server.ts" },
         }),
+        react(),
       ],
     })
   : defineLovableConfig({
