@@ -1,23 +1,17 @@
 import { useEffect, useState } from "react";
 import { X, ArrowRight } from "lucide-react";
 
-const STORAGE_KEY = "bellcrest_booking_popup_seen";
-
 export function BookingPopup() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (sessionStorage.getItem(STORAGE_KEY)) return;
     const t = setTimeout(() => setOpen(true), 1200);
     return () => clearTimeout(t);
   }, []);
 
   const close = () => {
     setOpen(false);
-    try {
-      sessionStorage.setItem(STORAGE_KEY, "1");
-    } catch {}
   };
 
   if (!open) return null;

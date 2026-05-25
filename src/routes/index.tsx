@@ -155,6 +155,95 @@ function Home() {
         </div>
       </section>
 
+      {/* Clinic Gallery */}
+      <section className="bg-brand-surface py-24 border-t border-border">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-16 text-center">
+            <span className="mb-4 inline-block rounded-full bg-brand-blue-soft px-4 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-blue">
+              Our Clinic
+            </span>
+            <h3 className="mb-4 font-serif text-3xl font-bold text-brand-navy md:text-4xl">Modern & Welcoming Facilities</h3>
+            <p className="mx-auto max-w-xl text-brand-slate">
+              Take a tour of Bellcrest Family Clinic. Our professional spaces are designed to provide a comfortable, pristine, and comforting environment for your care.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/WhatsApp Image 2026-05-21 at 19.17.58 (1).jpeg"
+                  alt="Bellcrest Family Clinic reception desk"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Reception & Welcome Lounge</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-75">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/WhatsApp Image 2026-05-21 at 19.14.46 (2).jpeg"
+                  alt="Comfortable waiting lounge area"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Patient Waiting Area</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/WhatsApp Image 2026-05-21 at 19.14.46 (3).jpeg"
+                  alt="Modern patient consulting room"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Modern Consulting Rooms</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-150">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/WhatsApp Image 2026-05-21 at 19.15.32 (4).jpeg"
+                  alt="Pristine examination room"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Pristine Examination Rooms</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/WhatsApp Image 2026-05-21 at 19.15.32 (5).jpeg"
+                  alt="State of the art medical equipment"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">State-of-the-Art Medical Care</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-300">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/WhatsApp Image 2026-05-21 at 19.15.32 (6).jpeg"
+                  alt="Patient consultation desk"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Professional Patient Consultation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Book CTA */}
       <section id="book" className="bg-white py-24">
         <div className="mx-auto max-w-3xl px-6 text-center">
