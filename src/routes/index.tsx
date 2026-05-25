@@ -81,7 +81,7 @@ function Home() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 divide-y divide-border md:grid-cols-3 md:divide-x md:divide-y-0">
           <InfoItem icon={Phone} label="Reception" value="289-245-1071" />
           <InfoItem icon={Clock} label="Office Hours" value="Mon–Wed & Fri 9am–5pm | Thu 9am–1pm" />
-          <InfoItem icon={MapPin} label="Location" value="672 Brant St, Burlington" />
+          <InfoItem icon={MapPin} label="Location" value="Unit 407 — 672 Brant Street, Burlington, ON L7R 2H3" />
         </div>
       </section>
 

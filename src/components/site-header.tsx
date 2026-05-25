@@ -15,8 +15,8 @@ export function SiteHeader() {
 
   return (
     <>
-      <div className="bg-brand-alert px-6 py-2 text-center text-[11px] font-bold tracking-widest text-white uppercase">
-        Medical emergency? Call 911 or visit the nearest Emergency Room.
+      <div className="bg-brand-gold px-6 py-2 text-center text-[11px] font-bold tracking-widest text-brand-navy uppercase">
+        We are accepting new patients
       </div>
       <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
