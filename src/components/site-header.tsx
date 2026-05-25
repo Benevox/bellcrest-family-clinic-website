@@ -38,6 +38,14 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
+             <a
+              href="https://form.jotform.com/260983913712058"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border-2 border-brand-blue bg-brand-blue/5 px-5 py-2 text-xs font-bold tracking-wider text-brand-blue uppercase transition-all hover:bg-brand-blue hover:text-white shadow-[0_0_12px_rgba(59,130,246,0.15)]"
+            >
+              FHO Enrolment
+            </a>
             <a
               href="https://app.avaros.ca/av/weblink/bellcrest"
               target="_blank"
@@ -68,6 +76,15 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
+             <a
+              href="https://form.jotform.com/260983913712058"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="rounded-full border-2 border-brand-blue bg-brand-blue/5 px-6 py-2 text-center text-xs font-bold tracking-wider text-brand-blue uppercase"
+            >
+              FHO Enrolment
+            </a>
             <a
               href="https://app.avaros.ca/av/weblink/bellcrest"
               target="_blank"
