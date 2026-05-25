@@ -39,7 +39,9 @@ export function SiteHeader() {
               </Link>
             ))}
             <a
-              href="#book"
+              href="https://app.avaros.ca/av/weblink/bellcrest"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-brand-gold px-6 py-2.5 text-xs font-bold tracking-wider text-brand-navy uppercase transition-all hover:brightness-95"
             >
               Book Online
@@ -67,7 +69,9 @@ export function SiteHeader() {
               </Link>
             ))}
             <a
-              href="#book"
+              href="https://app.avaros.ca/av/weblink/bellcrest"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="rounded-full bg-brand-gold px-6 py-2.5 text-center text-xs font-bold tracking-wider text-brand-navy uppercase"
             >

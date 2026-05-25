@@ -55,7 +55,9 @@ export function BookingPopup() {
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
             <a
-              href="#book"
+              href="https://app.avaros.ca/av/weblink/bellcrest"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={close}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-6 py-3 text-xs font-bold uppercase tracking-wider text-brand-navy transition-all hover:brightness-95"
             >

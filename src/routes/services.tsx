@@ -84,7 +84,9 @@ function ServicesPage() {
             Review the booking guidelines before selecting an appointment type.
           </p>
           <a
-            href="#"
+            href="https://app.avaros.ca/av/weblink/bellcrest"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-navy transition-all hover:gap-3"
           >
             Book Now <ArrowRight size={16} />
