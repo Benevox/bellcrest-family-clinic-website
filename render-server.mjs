@@ -36,7 +36,8 @@ const { default: handler } = await import("./dist/server/server.js");
 
 const server = createServer(async (req, res) => {
   // 1. Try to serve a static file from dist/client/
-  const filePath = join(clientDir, req.url.split("?")[0]);
+  const decodedPathname = decodeURIComponent(req.url.split("?")[0]);
+  const filePath = join(clientDir, decodedPathname);
   if (existsSync(filePath) && statSync(filePath).isFile()) {
     const ext = extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || "application/octet-stream";
