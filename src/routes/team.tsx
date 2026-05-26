@@ -39,7 +39,7 @@ function TeamPage() {
           <div className="rounded-2xl border border-border bg-white p-8 md:p-12">
             <p className="mb-1 text-xs uppercase tracking-widest text-brand-gold">Family Physician</p>
             <h2 className="mb-1 font-serif text-3xl font-bold text-brand-navy">Dr. Samuel Onuekwa</h2>
-            <p className="mb-6 text-sm uppercase tracking-widest text-brand-slate">MBBS, MPH, MRCGP</p>
+            <p className="mb-6 text-sm uppercase tracking-widest text-brand-slate">MBBS, MPH, MRCGP, CCFP</p>
             <p className="mb-4 text-brand-slate leading-relaxed">
               Dr. Samuel Onuekwa is an experienced family physician with over a decade of medical practice experience, including several years working in the United Kingdom before relocating to Canada. His background spans both public and private healthcare settings, where he gained extensive experience managing a wide range of acute and chronic medical conditions while providing comprehensive, patient-focused care.
             </p>
@@ -54,7 +54,7 @@ function TeamPage() {
       </section>
 
       {/* Dr. Joy Onuekwa */}
-      <section className="pb-20">
+      <section className="pb-16">
         <div className="mx-auto max-w-4xl px-6">
           <div className="rounded-2xl border border-border bg-white p-8 md:p-12">
             <span className="mb-4 inline-block rounded-full bg-brand-gold-soft px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-gold">
@@ -64,6 +64,28 @@ function TeamPage() {
             <p className="text-brand-slate leading-relaxed">
               A full biography for Dr. Joy Onuekwa will be available here soon. Please check back shortly to learn more about her background, training, and clinical interests.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Clinic environment banner */}
+      <section className="pb-20">
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="relative overflow-hidden rounded-3xl border border-border bg-white p-2 shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
+            <div className="aspect-[21/9] w-full overflow-hidden rounded-2xl">
+              <img
+                src="/WhatsApp Image 2026-05-21 at 19.15.32 (6).jpeg"
+                alt="Serene and welcoming clinic waiting area"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="p-6 text-center">
+              <h4 className="font-serif text-xl font-bold text-brand-navy mb-2">Our Clinic Environment</h4>
+              <p className="text-sm text-brand-slate max-w-xl mx-auto">
+                We believe that a serene, clean, and highly professional medical office plays a vital role in a positive healthcare experience. Visit us in downtown Burlington.
+              </p>
+            </div>
           </div>
         </div>
       </section>

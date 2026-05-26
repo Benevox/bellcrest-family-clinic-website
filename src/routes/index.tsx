@@ -49,7 +49,9 @@ function Home() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="#book"
+                href="https://app.avaros.ca/av/weblink/bellcrest"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-lg bg-brand-gold px-8 py-4 text-sm font-bold text-brand-navy transition-all hover:brightness-95"
               >
                 Schedule an Appointment
@@ -79,7 +81,7 @@ function Home() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 divide-y divide-border md:grid-cols-3 md:divide-x md:divide-y-0">
           <InfoItem icon={Phone} label="Reception" value="289-245-1071" />
           <InfoItem icon={Clock} label="Office Hours" value="Mon–Wed & Fri 9am–5pm | Thu 9am–1pm" />
-          <InfoItem icon={MapPin} label="Location" value="672 Brant St, Burlington" />
+          <InfoItem icon={MapPin} label="Location" value="Unit 407 — 672 Brant Street, Burlington, ON L7R 2H3" />
         </div>
       </section>
 
@@ -153,6 +155,95 @@ function Home() {
         </div>
       </section>
 
+      {/* Clinic Gallery */}
+      <section className="bg-brand-surface py-24 border-t border-border">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-16 text-center">
+            <span className="mb-4 inline-block rounded-full bg-brand-blue-soft px-4 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-blue">
+              Our Clinic
+            </span>
+            <h3 className="mb-4 font-serif text-3xl font-bold text-brand-navy md:text-4xl">Modern & Welcoming Facilities</h3>
+            <p className="mx-auto max-w-xl text-brand-slate">
+              Take a tour of Bellcrest Family Clinic. Our professional spaces are designed to provide a comfortable, pristine, and comforting environment for your care.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/reception area.jpeg"
+                  alt="Reception Area at Bellcrest Family Clinic"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Reception & Welcome Lounge</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-75">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/reception area 2a.jpeg"
+                  alt="Welcome lounge at Bellcrest Family Clinic"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Serene Welcome Lounge</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/patient waiting area.jpeg"
+                  alt="Patient Waiting Area"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Comfortable Waiting Area</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-150">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/consulting room 1st.jpeg"
+                  alt="Modern Consulting Room 1"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Modern Consulting Room</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/consulting room 2.jpeg"
+                  alt="Modern Consulting Room 2"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Pristine Examination Room</p>
+            </div>
+
+            <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-300">
+              <div className="overflow-hidden rounded-xl aspect-[4/3]">
+                <img
+                  src="/consulting room 3.jpeg"
+                  alt="Modern Consulting Room 3"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Professional Consultation Space</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Book CTA */}
       <section id="book" className="bg-white py-24">
         <div className="mx-auto max-w-3xl px-6 text-center">
@@ -161,7 +252,9 @@ function Home() {
             Review the booking guidelines before selecting an appointment type. Questions? Call our clinic during regular business hours at <span className="font-semibold text-brand-navy">289-245-1071</span>.
           </p>
           <a
-            href="#"
+            href="https://app.avaros.ca/av/weblink/bellcrest"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-brand-gold px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-navy transition-all hover:brightness-95"
           >
             Book Now <ArrowRight size={16} />

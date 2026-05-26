@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { MapPin, Phone, Printer, Mail, Clock } from "lucide-react";
@@ -19,7 +19,6 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
 
   return (
     <div className="min-h-screen bg-brand-surface text-brand-navy">
@@ -75,80 +74,26 @@ function ContactPage() {
             </p>
           </div>
 
-          {submitted ? (
-            <div className="rounded-2xl border border-brand-blue/20 bg-brand-blue-soft p-8 text-center">
-              <h3 className="mb-2 font-serif text-2xl font-bold text-brand-navy">Thank you</h3>
-              <p className="text-brand-slate">We've received your request and will be in touch when a spot opens up.</p>
-            </div>
-          ) : (
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSubmitted(true);
-              }}
-              className="space-y-6 rounded-2xl border border-border bg-brand-surface p-8"
+          <div className="mx-auto flex justify-center overflow-hidden rounded-2xl border border-border bg-brand-surface p-2 md:p-6 shadow-sm">
+            <iframe
+              title="New patient registration form"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdV5eVqLHxQ8QU1d4ZLDjZL4DAw2QThNIFzmj_CuTnFSC91sw/viewform?embedded=true"
+              width="640"
+              height="1698"
+              frameBorder="0"
+              marginHeight={0}
+              marginWidth={0}
+              className="w-full max-w-[640px] min-h-[1720px] border-0"
+              loading="lazy"
             >
-              <Field label="Full name" required>
-                <input required type="text" className={inputClass} placeholder="Jane Doe" />
-              </Field>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                <Field label="Phone number" required>
-                  <input required type="tel" className={inputClass} placeholder="(289) 555-0123" />
-                </Field>
-                <Field label="Email address" required>
-                  <input required type="email" className={inputClass} placeholder="you@example.com" />
-                </Field>
-              </div>
-              <Field label="Preferred contact method">
-                <select className={inputClass} defaultValue="email">
-                  <option value="email">Email</option>
-                  <option value="phone">Phone</option>
-                </select>
-              </Field>
-              <Field label="Do you currently have a family doctor?">
-                <select className={inputClass} defaultValue="no">
-                  <option value="yes">Yes</option>
-                  <option value="retiring">Yes, but they are retiring / I moved away</option>
-                  <option value="no">No</option>
-                </select>
-              </Field>
-              <Field label="Reason for requesting to become a patient">
-                <textarea
-                  rows={4}
-                  className={inputClass}
-                  placeholder="Please do not leave any specific medical information."
-                />
-              </Field>
-              <p className="text-xs text-brand-slate">
-                I acknowledge that submission of this form is only a request, not acceptance.
-              </p>
-              <button
-                type="submit"
-                className="w-full rounded-full bg-brand-gold px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-navy transition-all hover:brightness-95"
-              >
-                Send Request
-              </button>
-            </form>
-          )}
+              Loading…
+            </iframe>
+          </div>
         </div>
       </section>
 
       <SiteFooter />
     </div>
-  );
-}
-
-const inputClass =
-  "w-full rounded-lg border border-border bg-white px-4 py-3 text-sm text-brand-navy placeholder:text-brand-slate/60 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20";
-
-function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
-  return (
-    <label className="block">
-      <span className="mb-2 block text-xs font-bold uppercase tracking-widest text-brand-slate">
-        {label}{required && <span className="text-brand-alert"> *</span>}
-      </span>
-      {children}
-    </label>
   );
 }
 
