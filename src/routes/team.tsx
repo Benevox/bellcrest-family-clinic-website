@@ -74,16 +74,16 @@ function TeamPage() {
           <div className="relative overflow-hidden rounded-3xl border border-border bg-white p-2 shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
             <div className="aspect-[21/9] w-full overflow-hidden rounded-2xl">
               <img
-                src="/WhatsApp Image 2026-05-21 at 19.15.32 (7).jpeg"
-                alt="Modern hallway and consulting entrance"
+                src="/WhatsApp Image 2026-05-21 at 19.15.32 (6).jpeg"
+                alt="Serene and welcoming clinic waiting area"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
             <div className="p-6 text-center">
-              <h4 className="font-serif text-xl font-bold text-brand-navy mb-2">Our Healing Environment</h4>
+              <h4 className="font-serif text-xl font-bold text-brand-navy mb-2">Our Clinic Environment</h4>
               <p className="text-sm text-brand-slate max-w-xl mx-auto">
-                We believe that a serene, clean, and highly professional medical office plays a vital role in positive patient outcomes. Visit us in downtown Burlington.
+                We believe that a serene, clean, and highly professional medical office plays a vital role in a positive healthcare experience. Visit us in downtown Burlington.
               </p>
             </div>
           </div>
