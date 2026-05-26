@@ -208,7 +208,7 @@ function Home() {
             <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-150">
               <div className="overflow-hidden rounded-xl aspect-[4/3]">
                 <img
-                  src="/consulting room 1.jpeg"
+                  src="/consulting room 1st.jpeg"
                   alt="Modern Consulting Room 1"
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
