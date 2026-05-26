@@ -178,7 +178,7 @@ function Home() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Reception Area 1</p>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Reception & Welcome Lounge</p>
             </div>
 
             <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-75">
@@ -190,7 +190,7 @@ function Home() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Reception Area 2</p>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Serene Welcome Lounge</p>
             </div>
 
             <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
@@ -202,7 +202,7 @@ function Home() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Patient Waiting Area</p>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Comfortable Waiting Area</p>
             </div>
 
             <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-150">
@@ -214,7 +214,7 @@ function Home() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Consulting Room 1</p>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Modern Consulting Room</p>
             </div>
 
             <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
@@ -226,7 +226,7 @@ function Home() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Consulting Room 2</p>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Pristine Examination Room</p>
             </div>
 
             <div className="group overflow-hidden rounded-2xl border border-border bg-white p-2 shadow-sm transition-all hover:border-brand-blue hover:shadow-md animate-in fade-in slide-in-from-bottom-4 duration-500 delay-300">
@@ -238,7 +238,7 @@ function Home() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Consulting Room 3</p>
+              <p className="mt-4 text-center text-xs font-bold uppercase tracking-wider text-brand-navy">Professional Consultation Space</p>
             </div>
           </div>
         </div>
