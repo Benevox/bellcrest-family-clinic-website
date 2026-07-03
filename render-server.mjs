@@ -34,7 +34,32 @@ const MIME_TYPES = {
 // Import the compiled TanStack Start / Cloudflare-style SSR handler
 const { default: handler } = await import("./dist/server/server.js");
 
+// --- Crash prevention: global safety net ---
+// Clients (bots, health probes, flaky mobile connections) that drop a
+// connection mid-request cause Node's HTTP internals to throw
+// `Error: aborted` / ECONNRESET as an *uncaught* exception, crashing
+// the process. We swallow those specific errors here; everything else
+// is still treated as fatal so real bugs surface normally.
+process.on('uncaughtException', (err) => {
+  if (err.message === 'aborted' || err.code === 'ECONNRESET') {
+    console.warn('[server] client disconnected early, ignoring:', err.message);
+    return;
+  }
+  console.error('[server] fatal uncaught exception:', err);
+  process.exit(1);
+});
+
 const server = createServer(async (req, res) => {
+  // --- Crash prevention: per-request aborted/close listener ---
+  // The `for await` body-read loop below throws `Error: aborted` as an
+  // uncaught exception when a client drops the connection mid-read.
+  // Attaching a `close` listener here tells Node the event is handled,
+  // preventing it from surfacing as an uncaught exception.
+  let clientAborted = false;
+  req.on('close', () => { clientAborted = true; });
+  // `aborted` is deprecated in Node 17+ but kept for older runtimes
+  req.on('aborted', () => { clientAborted = true; });
+
   // 1. Try to serve a static file from dist/client/
   const decodedPathname = decodeURIComponent(req.url.split("?")[0]);
   const filePath = join(clientDir, decodedPathname);
@@ -58,7 +83,15 @@ const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${host}`);
 
   const chunks = [];
-  for await (const chunk of req) chunks.push(chunk);
+  try {
+    for await (const chunk of req) chunks.push(chunk);
+  } catch (readErr) {
+    if (clientAborted || readErr.message === 'aborted' || readErr.code === 'ECONNRESET') {
+      console.warn('[server] client disconnected during body read:', req.url);
+      return; // connection is gone, nothing to respond to
+    }
+    throw readErr; // re-throw unexpected read errors
+  }
   const body = chunks.length > 0 ? Buffer.concat(chunks) : null;
 
   const request = new Request(url, {
