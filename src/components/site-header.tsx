@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 import logo from "@/assets/bellcrest-logo.avif";
 
 const navItems = [
@@ -17,9 +17,17 @@ export function SiteHeader() {
     <>
       <Link
         to="/contact"
-        className="block bg-brand-gold px-6 py-2 text-center text-[11px] font-bold tracking-widest text-brand-navy uppercase transition-colors hover:bg-brand-gold/90"
+        className="group flex items-center justify-center gap-2 bg-brand-gold px-2 py-2 text-center text-[10px] font-bold tracking-wide text-brand-navy uppercase transition-colors hover:bg-brand-gold/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-navy sm:px-6 sm:text-[11px] sm:tracking-widest"
       >
-        We are accepting new patients
+        <span>
+          We are accepting new patients
+        </span>
+        <span className="underline underline-offset-4">Learn more</span>
+        <ArrowRight
+          size={14}
+          aria-hidden="true"
+          className="shrink-0 transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1"
+        />
       </Link>
       <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">

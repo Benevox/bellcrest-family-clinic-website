@@ -37,11 +37,11 @@ function Home() {
       {/* Hero */}
       <header className="relative overflow-hidden bg-white py-20 md:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 md:grid-cols-2">
-          <div>
+          <div className="min-w-0">
             <span className="mb-6 inline-block rounded-full bg-brand-blue-soft px-4 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-blue">
               Burlington, Ontario
             </span>
-            <h2 className="mb-8 font-serif text-5xl font-bold leading-[1.1] text-brand-navy md:text-6xl">
+            <h2 className="mb-8 font-serif text-4xl font-bold leading-[1.1] text-brand-navy sm:text-5xl md:text-6xl">
               Comprehensive care for your family's lifelong health.
             </h2>
             <p className="mb-10 max-w-lg text-lg leading-relaxed text-brand-slate">
