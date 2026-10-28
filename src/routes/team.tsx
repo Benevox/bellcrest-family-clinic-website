@@ -57,12 +57,22 @@ function TeamPage() {
       <section className="pb-16">
         <div className="mx-auto max-w-4xl px-6">
           <div className="rounded-2xl border border-border bg-white p-8 md:p-12">
-            <span className="mb-4 inline-block rounded-full bg-brand-gold-soft px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-gold">
-              Coming Soon
-            </span>
-            <h2 className="mb-4 font-serif text-3xl font-bold text-brand-navy">Dr. Joy Onuekwa</h2>
+            <h2 className="mb-1 font-serif text-3xl font-bold text-brand-navy">Dr. Joy Onuekwa</h2>
+            <p className="mb-6 text-sm uppercase tracking-widest text-brand-slate">MBBS, MRCGP, DRCOG, DCOSRH</p>
+            <p className="mb-4 text-brand-slate leading-relaxed">
+              Dr. Joy Onuekwa is a dedicated and enthusiastic medical professional with a strong commitment to delivering compassionate, patient-centred care. She obtained her MBBS from the University of Port Harcourt in 2015 and subsequently completed her medical residency and MRCGP in the United Kingdom.
+            </p>
+            <p className="mb-4 text-brand-slate leading-relaxed">
+              With a special interest in women’s sexual and reproductive health, Dr. Onuekwa is passionate about supporting women through every stage of their healthcare journey, promoting wellbeing, and providing evidence-based, holistic care.
+            </p>
+            <p className="mb-4 text-brand-slate leading-relaxed">
+              She holds additional UK qualifications, including the Diploma of the Royal College of Obstetricians and Gynaecologists (DRCOG) and the Diploma of the College/Faculty of Sexual and Reproductive Healthcare (DCoSRH).
+            </p>
+            <p className="mb-4 text-brand-slate leading-relaxed">
+              Dr. Onuekwa is enthusiastic about collaborative working and values building strong professional relationships to achieve positive outcomes for patients. She is committed to continuous professional development, empowering patients through education, and contributing to a supportive and inclusive healthcare environment.
+            </p>
             <p className="text-brand-slate leading-relaxed">
-              A full biography for Dr. Joy Onuekwa will be available here soon. Please check back shortly to learn more about her background, training, and clinical interests.
+              Her approach combines clinical knowledge, empathy, and a genuine passion for improving health and wellbeing.
             </p>
           </div>
         </div>
